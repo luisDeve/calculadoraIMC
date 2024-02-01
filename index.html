@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos/normalize.css" />
+    <link rel="stylesheet" href="estilos/estilos.css" />
+    <title>Document</title>
+  </head>
+  
+<body>
+    <div class="container">
+      <div class="container__titulos">
+        <div class="container__titulos-texto">
+          <h1>Bienvenido a calculo IMC</h1>
+          <p>
+            Para un cálculo correcto necesitamos algo de información básica
+            sobre ti
+          </p>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-moon-filled"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path
+            d="M12 1.992a10 10 0 1 0 9.236 13.838c.341 -.82 -.476 -1.644 -1.298 -1.31a6.5 6.5 0 0 1 -6.864 -10.787l.077 -.08c.551 -.63 .113 -1.653 -.758 -1.653h-.266l-.068 -.006l-.06 -.002z"
+            stroke-width="0"
+            fill="currentColor"
+          />
+        </svg>
+      </div>
+      <form class="formulario" action="">
+        <label for="">Peso</label>
+        <Input class="input" type="number" name="username" id="inputPeso"></Input>
+        <label for="">Altura</label>
+        <Input class="input" type="text" id="inputAltura"></Input>
+        <label for="">sexo</label>
+        <select name="sexo" class="genero" id="genero">
+          <option>Hombre</option>
+          <option selected>Mujer</option>
+        </select>
+        <button class="boton" type="submit">Calculcar Imc</button>
+      </form>
+    </div>
+
+
+    <div class="dots container">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    
+    <main class="container container__oculta">
+      <div class="container__datos">
+      </div>
+
+      <div class="container__resultado">
+        <div class="container__resultado-recomendacion">
+          <h2>Recomendacion</h2>
+          <div class="container__resultado-recomendacion-recomendaciones">
+         
+          </div>
+        </div>
+
+        <div class="container__resultado-tabla">
+          <div class="container__resultado-tabla-texto">
+        
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+
+    <script type="module" src="app/app.js"></script>
+    <script type="module" src="app/datos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+  </body>
+</html>
